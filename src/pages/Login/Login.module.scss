@@ -1,0 +1,44 @@
+.container_login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "col_1 col_2"
+    ;
+    h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #969AB8;
+        margin-top: 4rem;
+    }
+    a {
+        font-weight: 600;
+        font-size: 15px;
+        color: #0062FF;
+        text-decoration: none;
+    }
+}
+
+.container_login .col_1 {
+    grid-area: col_1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form {
+        width: 50%;
+        height: 300px;
+    }
+}
+
+.container_login .col_2 {
+    grid-area: col_2;
+    background-image: url('../../assets/images/bg-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
